@@ -19,6 +19,7 @@ class Test:
 		self.a.deposit(10)
 		assert self.a.withdraw(5) == True 
 		assert self.a.withdraw(-4) == False
+		assert self.a.withdraw(0) == False
 
 
 
