@@ -14,6 +14,7 @@ class Test:
 	def test_deposit(self):
 		assert self.a.deposit(10) == True
 		assert self.a.deposit(-1) == False
+		assert self.a.deposit(0) == False
 	
 	def test_withdraw(self):
 		self.a.deposit(10)
